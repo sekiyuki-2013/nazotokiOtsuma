@@ -132,6 +132,22 @@ let stopman = setInterval(function(){
     clearInterval(stopman); // 無効化するときはsetintervalのタイマーをclearIntervalに渡してあげるだけです。
   }
 
+//クリアボタンが正しかったらストップウォッチを止める
+      //完了ボタンを押した時のイベント
+$('#kanryou').on('click', function(){
+  if($('#keyBox0').attr('color') == '#FF7F7F' && 
+    $('#keyBox1').attr('color') == '#6687CC' && 
+    $('#keyBox2').attr('color') == '#FFFFFF' && 
+    $('#keyBox3').attr('color') == '#AA7FFF' && 
+    $('#keyBox4').attr('color') == '#FFFF7F' && 
+    $('#keyBox5').attr('color') == '#66CC66'){
+
+    $('#kanryou').attr('color', '#FF7F7F');
+        clearInterval(stopman);
+  }
+
+});
+
 }, 100);
 
 
@@ -167,7 +183,6 @@ $('#kanryou').on('click', function(){
     $('#kanryou').attr('color', '#FF7F7F');
         seikaiSE.currentTime = 0;
         seikaiSE.play();
-        clearInterval(stopman);
   }else{
     sippaiSE.currentTime = 0;
     sippaiSE.play();
