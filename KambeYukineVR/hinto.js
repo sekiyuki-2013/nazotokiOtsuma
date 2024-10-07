@@ -8,7 +8,6 @@ hinto_kanri.push(new Hinto(1800 - 50, "5秒経過"));
 
 hinto_kanri.push(new Hinto(1500, "残り2分半"));
 
-hinto_kanri.push(new Hinto(1800 - 100, "作田"));
 
 
 
