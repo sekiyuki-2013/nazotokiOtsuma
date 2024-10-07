@@ -165,8 +165,9 @@ $('#kanryou').on('click', function(){
     $('#keyBox5').attr('color') == '#66CC66'){
 
     $('#kanryou').attr('color', '#FF7F7F');
-    seikaiSE.currentTime = 0;
-    seikaiSE.play();
+        seikaiSE.currentTime = 0;
+        seikaiSE.play();
+        clearInterval(stopman);
   }else{
     sippaiSE.currentTime = 0;
     sippaiSE.play();
