@@ -185,8 +185,8 @@ $('#kanryou').on('click', function(){
     $('#kanryou').attr('color', '#FF7F7F');
         seikaiSE.currentTime = 0;
         seikaiSE.play();
-        let clearMessage = "クリア";
-        $("#hinto").html(clearMessage);
+        //let clearMessage = "クリア";
+        //$("#hinto").html(clearMessage);
   }else{
     sippaiSE.currentTime = 0;
     sippaiSE.play();
