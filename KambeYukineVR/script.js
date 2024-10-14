@@ -110,10 +110,12 @@ let sippaiSE = new Audio("pokupoku.mp3");
 let isIntersecting = false;
 let isAButtonDown = false;
 
+/*
 $('#ctlR').on('raycaster-intersection', function(evt) {
   let intersectedEl = evt.originalEvent.detail.els[0];
   $(intersectedEl).click();
 });
+*/
 
 
 //タイマー
